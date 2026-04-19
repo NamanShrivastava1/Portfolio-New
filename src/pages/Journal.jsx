@@ -14,6 +14,10 @@ const Journal = () => {
   const [lines, setLines] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const initial = Array.from({ length: 20 }, generateLine);
     setLines(initial);
 
@@ -38,9 +42,7 @@ const Journal = () => {
   return (
     <div className="min-h-screen bg-black text-white px-4 sm:px-6 py-16 sm:py-20">
       <div className="max-w-2xl lg:max-w-2xl mx-auto">
-        {/* 🔥 HEADER */}
         <div className="mb-12">
-          {/* TOP ROW */}
           <div className="flex items-center justify-between">
             <FireIcon />
 
@@ -57,7 +59,6 @@ const Journal = () => {
             </div>
           </div>
 
-          {/* TITLE */}
           <h1 className="text-xl sm:text-2xl tracking-[0.3em] mt-6">JOURNAL</h1>
 
           <p className="text-gray-500 mt-3 text-sm">
@@ -65,7 +66,6 @@ const Journal = () => {
           </p>
         </div>
 
-        {/* 🟩 MATRIX BOX */}
         <div className="relative w-full max-w-3xl mx-auto mt-16">
           <div
             className="
@@ -83,7 +83,6 @@ const Journal = () => {
               overflow-hidden
             "
           >
-            {/* BACKGROUND TEXT */}
             <div className="opacity-70">
               {lines.slice(0, 18).map((line, i) => (
                 <p key={i} className="whitespace-nowrap overflow-hidden">
@@ -92,7 +91,6 @@ const Journal = () => {
               ))}
             </div>
 
-            {/* CENTER TEXT */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="bg-black/60 px-4 py-2 rounded-md backdrop-blur-[2px]">
                 <span className="text-white/90 text-[16px] sm:text-[20px] md:text-[22px] tracking-[0.35em]">

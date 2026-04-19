@@ -2,7 +2,6 @@ import GlowCircle from "../components/GlowCircle";
 import { useState } from "react";
 import { Mail, Copy } from "lucide-react";
 import { Link } from "react-router-dom";
-import Projects from "./Projects";
 
 const Home = () => {
   const [active, setActive] = useState("email");
@@ -17,7 +16,6 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-20">
       <div className="max-w-2xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* LEFT */}
         <div className="text-center md:text-left">
           <p className="text-teal-400 tracking-[0.3em] text-sm">
             LE ANH NGOC <span className="text-gray-600">/ @ngocla99</span>
@@ -43,9 +41,7 @@ const Home = () => {
             • OPEN TO EXCITING OPPORTUNITIES GLOBALLY.
           </p>
 
-          {/* 🔥 ACTION BUTTONS */}
           <div className="flex items-center gap-4 mt-6 justify-center md:justify-start">
-            {/* EMAIL */}
             <a
               href="mailto:namanshrivastava.connect@email.com"
               onMouseEnter={() => setActive("email")}
@@ -55,7 +51,6 @@ const Home = () => {
               <Mail size={18} />
             </a>
 
-            {/* COPY */}
             <button
               onMouseEnter={() => setActive("copy")}
               onClick={() =>
@@ -69,7 +64,6 @@ const Home = () => {
               <Copy size={18} />
             </button>
 
-            {/* TEXT */}
             <div className="text-gray-400 text-sm ml-2 text-left">
               <p>Want to discuss opportunities?</p>
 
@@ -81,7 +75,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* LINK */}
           <p className="mt-6 text-sm text-gray-500">
             YOU CAN{" "}
             <Link
@@ -92,7 +85,6 @@ const Home = () => {
             </Link>
           </p>
 
-          {/* TIMELINE */}
           <div className="mt-16">
             <div className="flex items-center gap-10 text-sm justify-center md:justify-start">
               <div className="flex items-center gap-2">
@@ -129,13 +121,11 @@ const Home = () => {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="hidden md:flex justify-center">
           <GlowCircle />
         </div>
       </div>
 
-      {/* 🔥 FOOTER */}
       <div className="max-w-4xl mx-auto mt-20 text-center">
         <p className="text-gray-600 text-xs mb-6">ELSEWHERE</p>
 

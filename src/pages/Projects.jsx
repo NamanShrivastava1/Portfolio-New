@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Mail, Copy } from "lucide-react";
 import FireIcon from "../components/FireIcon";
 
@@ -30,15 +30,16 @@ const experiences = [
 const Projects = () => {
   const [active, setActive] = useState("email");
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white px-4 sm:px-6 py-16 sm:py-20">
-      {/* HEADER (🔥 Fire + NAV aligned) */}
       <div className="max-w-2xl lg:max-w-2xl mx-auto">
         <div className="flex items-center justify-between mb-10">
-          {/* FIRE */}
           <FireIcon />
 
-          {/* NAV */}
           <div className="flex gap-4 sm:gap-6 text-sm text-teal-400">
             <Link className="relative group" to="/journal">
               JOURNAL
@@ -52,7 +53,6 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* TITLE */}
         <h1 className="text-xl sm:text-2xl tracking-[0.25em]">
           WORK EXPERIENCE
         </h1>
@@ -61,7 +61,6 @@ const Projects = () => {
           What I've been up to in the last 5+ years.
         </p>
 
-        {/* TIMELINE */}
         <div className="relative mt-12">
           <motion.div
             initial={{ height: 0 }}
@@ -83,7 +82,6 @@ const Projects = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 className="flex gap-6 sm:gap-10 group"
               >
-                {/* LEFT */}
                 <div className="relative min-w-30 sm:min-w-45">
                   <motion.div
                     initial={{ scale: 0 }}
@@ -102,7 +100,6 @@ const Projects = () => {
                   </motion.p>
                 </div>
 
-                {/* RIGHT */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -125,14 +122,12 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* FOOTER */}
         <div className="mt-16 sm:mt-24">
           <p className="text-orange-400 text-xs sm:text-sm tracking-widest mb-5 sm:mb-6">
             • OPEN TO EXCITING OPPORTUNITIES GLOBALLY.
           </p>
 
           <div className="flex items-start gap-3 sm:gap-4">
-            {/* EMAIL */}
             <a
               href="mailto:namanshrivastava.connect@email.com"
               onMouseEnter={() => setActive("email")}
@@ -142,7 +137,6 @@ const Projects = () => {
               <Mail size={18} />
             </a>
 
-            {/* COPY */}
             <button
               onMouseEnter={() => setActive("copy")}
               onClick={() =>
@@ -156,7 +150,6 @@ const Projects = () => {
               <Copy size={18} />
             </button>
 
-            {/* TEXT */}
             <div className="text-gray-400 text-xs sm:text-sm leading-tight">
               <p>Want to discuss opportunities?</p>
 

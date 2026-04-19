@@ -22,7 +22,7 @@ const MatrixText = ({ text = "COMING SOON" }) => {
       );
 
       if (iteration >= text.length) {
-        iteration = 0; // 🔥 LOOP AGAIN
+        iteration = 0;
       } else {
         iteration += 1 / 2;
       }

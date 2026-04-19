@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 const GlowCircle = () => {
   return (
     <div className="relative w-80 h-80 group">
-      {/* INNER GLOW */}
       <motion.div
         className="absolute inset-0 blur-2xl bg-teal-400/20"
         style={{
@@ -18,7 +17,6 @@ const GlowCircle = () => {
         }}
       />
 
-      {/* MAIN SHAPE */}
       <motion.div
         className="w-full h-full border border-teal-400"
         style={{
