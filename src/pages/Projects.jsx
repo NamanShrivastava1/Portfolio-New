@@ -134,7 +134,7 @@ const Projects = () => {
           <div className="flex items-start gap-3 sm:gap-4">
             {/* EMAIL */}
             <a
-              href="mailto:your@email.com"
+              href="mailto:namanshrivastava.connect@email.com"
               onMouseEnter={() => setActive("email")}
               className={`w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center border border-teal-400 rounded-xl transition
               ${active === "email" ? "shadow-[0_0_15px_#00f5d4]" : ""}`}
@@ -145,7 +145,11 @@ const Projects = () => {
             {/* COPY */}
             <button
               onMouseEnter={() => setActive("copy")}
-              onClick={() => navigator.clipboard.writeText("your@email.com")}
+              onClick={() =>
+                navigator.clipboard.writeText(
+                  "namanshrivastava.connect@email.com",
+                )
+              }
               className={`w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center border border-teal-400 rounded-xl transition
               ${active === "copy" ? "shadow-[0_0_15px_#00f5d4]" : ""}`}
             >
