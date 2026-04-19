@@ -145,7 +145,7 @@ const Home = () => {
         </div>
 
         <p className="text-gray-700 text-xs mt-10">
-          All $copy Copyright Reserved{" "}
+          All {"\u00A9"} Copyright Reserved{" "}
           <span className="text-teal-400">NAMAN SHRIVASTAVA</span>.
         </p>
       </div>
