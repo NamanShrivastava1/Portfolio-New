@@ -18,23 +18,24 @@ const Home = () => {
       <div className="max-w-2xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">
           <p className="text-teal-400 tracking-[0.3em] text-sm">
-            LE ANH NGOC <span className="text-gray-600">/ @ngocla99</span>
+            NAMAN SHRIVASTAVA{" "}
+            <span className="text-gray-600">/ @namanlogs</span>
           </p>
 
           <h1 className="text-3xl mt-6 leading-snug">
-            FRONTEND SPECIALIST <br />
-            WITH 5+ YEARS EXPERIENCE.
+            FULL STACK DEVELOPER <br />
+            TURNING IDEAS INTO SCALABLE PRODUCTS.
           </h1>
 
           <p className="text-gray-400 mt-6 leading-relaxed">
-            Building responsive applications that deliver exceptional user
-            experiences with modern technologies and clean code practices.
+            I build full stack applications with a strong focus on backend
+            architecture, scalability, and real-world problem solving.
           </p>
 
           <p className="text-gray-400 mt-6">
-            I'm the person who can quickly adapt to new technologies and take
-            ownership of tasks to deliver high-quality solutions that exceed
-            expectations. ✨
+            From designing APIs to managing data and building responsive UIs, I
+            work across the entire stack to deliver production-ready
+            applications.
           </p>
 
           <p className="text-orange-400 mt-8 text-sm tracking-widest">
@@ -65,7 +66,7 @@ const Home = () => {
             </button>
 
             <div className="text-gray-400 text-sm ml-2 text-left">
-              <p>Want to discuss opportunities?</p>
+              <p>Let’s build something impactful.</p>
 
               <p className="text-white">
                 {active === "email"
@@ -105,13 +106,16 @@ const Home = () => {
 
             <div className="flex gap-8 mt-6 text-sm justify-center md:justify-start flex-wrap">
               {[
-                { name: "Ewoosoft Viet", year: "2023 - NOW" },
-                { name: "Viettel Security", year: "2022 - 2023" },
-                { name: "FPT Software", year: "2021 - 2022" },
+                { name: "Snitch", year: "2026 - NOW" },
+                {
+                  name: "Veracity AI (Real-time AI Search Engine)",
+                  year: "2026",
+                },
+                { name: "PayGrid (Banking Backend)", year: "2025" },
               ].map((item) => (
                 <div
                   key={item.name}
-                  className="hover:text-teal-400 cursor-pointer transition text-center md:text-left"
+                  className="hover:text-teal-400 cursor-pointer transition text-center md:text-left hover:translate-x-1"
                 >
                   <p className="font-semibold">{item.name}</p>
                   <p className="text-gray-500 text-xs mt-1">{item.year}</p>
@@ -145,7 +149,7 @@ const Home = () => {
         </div>
 
         <p className="text-gray-700 text-xs mt-10">
-          All {"\u00A9"} Copyright Reserved{" "}
+          © All rights reserved{" "}
           <span className="text-teal-400">NAMAN SHRIVASTAVA</span>.
         </p>
       </div>

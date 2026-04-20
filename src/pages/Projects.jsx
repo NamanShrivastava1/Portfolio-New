@@ -4,26 +4,36 @@ import { useEffect, useState } from "react";
 import { Mail, Copy } from "lucide-react";
 import FireIcon from "../components/FireIcon";
 
-const experiences = [
+const projects = [
   {
-    date: "DEC 2025 - PRESENT",
-    company: "Ewoosoft",
-    role: "Full-stack Developer",
-    description:
-      "Group Purchase Campaign Platform: An e-commerce solution enabling users to form buying groups.",
+    name: "Snitch",
+    desc: "Currently building — a real-time monitoring and tracking system.",
+    date: "APR-2026 - NOW",
   },
   {
-    date: "AUG 2022 - MAR 2023",
-    company: "Viettel Security",
-    role: "Frontend Developer",
-    description:
-      "Worked on security platform tracking statistics and issuing alerts.",
+    name: "Veracity AI",
+    desc: "Built a full-stack AI search engine using React, Redux, Node.js, Express, and MongoDB with a ChatGPT-like interface and persistent chat history. Designed a custom AI pipeline using LangChain to orchestrate LLMs (Gemini/Mistral), perform intent detection, and fetch real-time data via Tavily API, generating accurate, source-grounded responses while reducing hallucinations.",
+    date: "FEB-2026 - MAR-2026",
   },
   {
-    date: "JAN 2022 - AUG 2022",
-    company: "FPT Software",
-    role: "Frontend Developer",
-    description: "Migrated legacy system to modern Angular architecture.",
+    name: "PayGrid",
+    desc: "Built a banking backend using Node.js, Express, MongoDB, and Redis, handling authentication, transactions, and session management. Implemented secure JWT-based auth with refresh token rotation, Redis-based session storage, and designed scalable APIs for payments, bookings, and user management.",
+    date: "DEC-2025 - JAN-2026",
+  },
+  {
+    name: "ScanDine",
+    desc: "Built a QR-based digital menu platform using React, Tailwind, Node.js, and MongoDB, enabling restaurants to create and manage menus in real time. Implemented authentication, image uploads, and dynamic menu rendering, with deployment on Vercel and SPA routing optimization.",
+    date: "MAY-2025 - JUL-2025",
+  },
+  {
+    name: "AI-Powered Code Reviewer",
+    desc: "Built a real-time AI code review platform using React, Node.js, and WebSockets for instant feedback. Integrated Gemini AI with a custom backend pipeline to analyze code and generate structured improvement suggestions, enabling live, interactive code evaluation.",
+    date: "JAN-2025 - FEB-2026",
+  },
+  {
+    name: "StayNest",
+    desc: "Developed a full-stack vacation rental platform using React, Express, and MongoDB. Implemented booking system, Razorpay payments, and Nodemailer-based email confirmations with a mobile-first UI.",
+    date: "MAR-2025 - APR-2025",
   },
 ];
 
@@ -53,12 +63,10 @@ const Projects = () => {
           </div>
         </div>
 
-        <h1 className="text-xl sm:text-2xl tracking-[0.25em]">
-          WORK EXPERIENCE
-        </h1>
+        <h1 className="text-xl sm:text-2xl tracking-[0.25em]">PROJECTS</h1>
 
         <p className="text-gray-500 mt-2 text-sm">
-          What I've been up to in the last 5+ years.
+          What I've been up to in the last 2+ years.
         </p>
 
         <div className="relative mt-12">
@@ -70,7 +78,7 @@ const Projects = () => {
           />
 
           <div className="space-y-14 sm:space-y-16">
-            {experiences.map((exp, index) => (
+            {projects.map((project, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 60 }}
@@ -82,6 +90,7 @@ const Projects = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 className="flex gap-6 sm:gap-10 group"
               >
+                {/* LEFT */}
                 <div className="relative min-w-30 sm:min-w-45">
                   <motion.div
                     initial={{ scale: 0 }}
@@ -96,25 +105,22 @@ const Projects = () => {
                     transition={{ delay: index * 0.3 }}
                     className="text-gray-500 text-[10px] sm:text-xs ml-8 tracking-[0.2em]"
                   >
-                    {exp.date}
+                    {project.date}
                   </motion.p>
                 </div>
 
+                {/* RIGHT */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ delay: index * 0.4 }}
                 >
                   <h3 className="text-base sm:text-lg font-semibold group-hover:text-teal-400 transition">
-                    {exp.company}
-                    <span className="text-gray-400 text-xs sm:text-sm">
-                      {" "}
-                      • {exp.role}
-                    </span>
+                    {project.name}
                   </h3>
 
                   <p className="text-gray-500 mt-2 sm:mt-3 text-xs sm:text-sm leading-relaxed max-w-xl">
-                    {exp.description}
+                    {project.desc}
                   </p>
                 </motion.div>
               </motion.div>
