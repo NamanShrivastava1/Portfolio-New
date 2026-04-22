@@ -28,7 +28,7 @@ const projects = [
   {
     name: "AI-Powered Code Reviewer",
     desc: "Built a real-time AI code review platform using React, Node.js, and WebSockets for instant feedback. Integrated Gemini AI with a custom backend pipeline to analyze code and generate structured improvement suggestions, enabling live, interactive code evaluation.",
-    date: "JAN-2025 - FEB-2026",
+    date: "JAN-2025 - FEB-2025",
   },
   {
     name: "StayNest",
