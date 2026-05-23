@@ -106,12 +106,18 @@ const Home = () => {
 
             <div className="flex gap-8 mt-6 text-sm justify-center md:justify-start flex-wrap">
               {[
-                { name: "Snitch", year: "2026 - NOW" },
                 {
-                  name: "Veracity AI (Real-time AI Search Engine)",
+                  name: "ScanDine: Smart QR Based Digital Menu Platform",
+                  year: "2025",
+                },
+                {
+                  name: "Snitch: Luxury Fashion Clothing Platform",
                   year: "2026",
                 },
-                { name: "PayGrid (Banking Backend)", year: "2025" },
+                {
+                  name: "Veracity AI: Perplexity Style AI Search Platform",
+                  year: "2026",
+                },
               ].map((item) => (
                 <div
                   key={item.name}
