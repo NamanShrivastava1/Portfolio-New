@@ -52,6 +52,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-black text-white px-4 sm:px-6 py-16 sm:py-20">
       <div className="max-w-2xl lg:max-w-2xl mx-auto">
+        {/* TOP */}
         <div className="flex items-center justify-between mb-10">
           <FireIcon />
 
@@ -68,17 +69,20 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* HEADING */}
         <h1 className="text-xl sm:text-2xl tracking-[0.25em]">PROJECTS</h1>
 
         <p className="text-gray-500 mt-2 text-sm">
           What I've been up to in the last 2+ years.
         </p>
 
+        {/* TIMELINE */}
         <div className="relative mt-12">
+          {/* LINE */}
           <motion.div
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
             className="absolute left-4 top-0 w-0.5 bg-teal-400/40"
           />
 
@@ -86,28 +90,36 @@ const Projects = () => {
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 60 }}
+                initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 0.6,
-                  delay: index * 0.2,
+                  duration: 0.35,
+                  delay: index * 0.05,
                 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, margin: "-50px" }}
                 className="flex gap-6 sm:gap-10 group"
               >
                 {/* LEFT */}
                 <div className="relative min-w-30 sm:min-w-45">
+                  {/* DOT */}
                   <motion.div
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
-                    transition={{ delay: index * 0.2 }}
+                    transition={{
+                      duration: 0.2,
+                      delay: index * 0.05,
+                    }}
                     className="absolute left-2 top-2 w-3 h-3 bg-teal-400 rounded-full shadow-[0_0_10px_#00f5d4]"
                   />
 
+                  {/* DATE */}
                   <motion.p
-                    initial={{ opacity: 0, x: -20 }}
+                    initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.3 }}
+                    transition={{
+                      duration: 0.25,
+                      delay: index * 0.08,
+                    }}
                     className="text-gray-500 text-[10px] sm:text-xs ml-8 tracking-[0.2em]"
                   >
                     {project.date}
@@ -118,9 +130,12 @@ const Projects = () => {
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
-                  transition={{ delay: index * 0.4 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: index * 0.1,
+                  }}
                 >
-                  <h3 className="text-base sm:text-lg font-semibold group-hover:text-teal-400 transition">
+                  <h3 className="text-base sm:text-lg font-semibold group-hover:text-teal-400 transition duration-300">
                     {project.name}
                   </h3>
 
@@ -133,6 +148,7 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* CONTACT */}
         <div className="mt-16 sm:mt-24">
           <p className="text-orange-400 text-xs sm:text-sm tracking-widest mb-5 sm:mb-6">
             • OPEN TO EXCITING OPPORTUNITIES GLOBALLY.
@@ -142,7 +158,7 @@ const Projects = () => {
             <a
               href="mailto:namanshrivastava.connect@email.com"
               onMouseEnter={() => setActive("email")}
-              className={`w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center border border-teal-400 rounded-xl transition
+              className={`w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center border border-teal-400 rounded-xl transition duration-300
               ${active === "email" ? "shadow-[0_0_15px_#00f5d4]" : ""}`}
             >
               <Mail size={18} />
@@ -155,7 +171,7 @@ const Projects = () => {
                   "namanshrivastava.connect@email.com",
                 )
               }
-              className={`w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center border border-teal-400 rounded-xl transition
+              className={`w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center border border-teal-400 rounded-xl transition duration-300
               ${active === "copy" ? "shadow-[0_0_15px_#00f5d4]" : ""}`}
             >
               <Copy size={18} />
