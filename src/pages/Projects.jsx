@@ -6,34 +6,39 @@ import FireIcon from "../components/FireIcon";
 
 const projects = [
   {
-    name: "Snitch",
-    desc: "Currently building — a real-time monitoring and tracking system.",
-    date: "APR-2026 - NOW",
+    name: "Snitch: Luxury Fashion Clothing Platform",
+    desc: "Built a full-stack luxury fashion platform using React.js, Tailwind CSS, Node.js, Express.js, and MongoDB, delivering premium shopping experiences with dynamic product discovery and seamless checkout workflows. Designed a variant-based product architecture supporting sizes, colors, stock management, dynamic pricing, and image galleries. Implemented advanced cart management with MongoDB aggregation pipelines and integrated Razorpay for secure order creation, payment verification, and transaction handling.",
+    date: "APR-2026 - MAY-2026",
   },
   {
-    name: "Veracity AI",
-    desc: "Built a full-stack AI search engine using React, Redux, Node.js, Express, and MongoDB with a ChatGPT-like interface and persistent chat history. Designed a custom AI pipeline using LangChain to orchestrate LLMs (Gemini/Mistral), perform intent detection, and fetch real-time data via Tavily API, generating accurate, source-grounded responses while reducing hallucinations.",
-    date: "FEB-2026 - MAR-2026",
+    name: "AI Battle Arena: Multi Agent AI Platform",
+    desc: "Built a multi-agent AI evaluation platform using LangGraph, LangChain, TypeScript, and multiple LLM providers including Gemini, Mistral, and Cohere. Designed an AI workflow orchestration system where multiple models generate parallel responses while a dedicated judge agent evaluates outputs using structured scoring and reasoning pipelines. Implemented graph-based state management, concurrent model execution, provider-agnostic abstractions, and schema-validated structured outputs using Zod, enabling reliable AI-to-AI evaluation workflows and scalable multi-agent architectures.",
+    date: "MAR-2026 - MAR-2026",
   },
   {
-    name: "PayGrid",
-    desc: "Built a banking backend using Node.js, Express, MongoDB, and Redis, handling authentication, transactions, and session management. Implemented secure JWT-based auth with refresh token rotation, Redis-based session storage, and designed scalable APIs for payments, bookings, and user management.",
-    date: "DEC-2025 - JAN-2026",
-  },
-  {
-    name: "ScanDine",
+    name: "ScanDine: Smart QR Based Digital Menu Platform",
     desc: "Built a QR-based digital menu platform using React, Tailwind, Node.js, and MongoDB, enabling restaurants to create and manage menus in real time. Implemented authentication, image uploads, and dynamic menu rendering, with deployment on Vercel and SPA routing optimization.",
-    date: "MAY-2025 - JUL-2025",
+    date: "MAY-2025 - NOW",
+  },
+  {
+    name: "Veracity AI: Perplexity Style AI Search Platform",
+    desc: "Built a full-stack AI search engine using React, Redux, Node.js, Express, and MongoDB with a ChatGPT-like interface and persistent chat history. Designed a custom AI pipeline using LangChain to orchestrate LLMs (Gemini/Mistral), perform intent detection, and fetch real-time data via Tavily API, generating accurate, source-grounded responses while reducing hallucinations.",
+    date: "JAN-2026 - MAR-2026",
+  },
+  {
+    name: "PayGrid: Banking and Transaction Processing Backend",
+    desc: "Built a banking backend using Node.js, Express, MongoDB, and Redis, handling authentication, transactions, and session management. Implemented secure JWT-based auth with refresh token rotation, Redis-based session storage, and designed scalable APIs for payments, bookings, and user management.",
+    date: "NOV-2025 - DEC-2025",
   },
   {
     name: "AI-Powered Code Reviewer",
     desc: "Built a real-time AI code review platform using React, Node.js, and WebSockets for instant feedback. Integrated Gemini AI with a custom backend pipeline to analyze code and generate structured improvement suggestions, enabling live, interactive code evaluation.",
-    date: "JAN-2025 - FEB-2025",
+    date: "MAR-2025 - APR-2025",
   },
   {
-    name: "StayNest",
+    name: "StayNest: Vacation Rental Platform",
     desc: "Developed a full-stack vacation rental platform using React, Express, and MongoDB. Implemented booking system, Razorpay payments, and Nodemailer-based email confirmations with a mobile-first UI.",
-    date: "MAR-2025 - APR-2025",
+    date: "JAN-2025 - FEB-2025",
   },
 ];
 
