@@ -17,7 +17,7 @@ const projects = [
   },
   {
     name: "ScanDine: Smart QR Based Digital Menu Platform",
-    desc: "Built a QR-based digital menu platform using React, Tailwind, Node.js, and MongoDB, enabling restaurants to create and manage menus in real time. Implemented authentication, image uploads, and dynamic menu rendering, with deployment on Vercel and SPA routing optimization.",
+    desc: "Architected a production-grade QR-based digital menu platform enabling restaurants to generate cafe-specific QR codes that dynamically map to live menus with real-time updates. Built a scalable backend using Node.js, Express.js, MongoDB, and Redis caching to optimize menu delivery and data retrieval performance. Implemented secure OTP-based authentication, JWT authorization, protected APIs, and automated email workflows using Nodemailer OAuth2. Integrated Multer and ImageKit for cloud-based media uploads and asset management for cafes and menu items. Deployed the infrastructure on AWS with Nginx reverse proxy configuration and automated deployments using GitHub Actions CI/CD pipelines, following modular backend architecture, centralized error handling, logging, and environment-based configuration management.",
     date: "MAY-2025 - NOW",
   },
   {
