@@ -108,7 +108,7 @@ const Home = () => {
               {[
                 {
                   name: "ScanDine: Smart QR Based Digital Menu Platform",
-                  year: "2025",
+                  year: "2025 - NOW",
                 },
                 {
                   name: "Snitch: Luxury Fashion Clothing Platform",
